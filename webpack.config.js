@@ -23,6 +23,13 @@ module.exports = {
                 loader: 'babel-loader',
                 include: path.resolve(__dirname, 'src')
             }
+        ],
+        rules: [
+            {
+                test: /\.scss$/,
+                loader: ['style-loader', 'css-loader', 'sass-loader'],
+                include: path.resolve(__dirname, 'src')
+            }
         ]
     }
 

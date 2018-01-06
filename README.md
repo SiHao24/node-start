@@ -23,3 +23,16 @@ webpack它是一个模块打包器。也就是俗称的构建工具，之前的G
 ```javascript
     npm install --save-dev babel-loader bable-core babel-preset-env
 ```
+##安装参数 --save和--save dev
+```javascript
+    npm install <package_name> --save表示将这个包名及对应的版本添加到package.json的dependencies
+```
+```javascript
+    npm install <package_name> --save-dev 表示将这个包名及对应的版本添加到package.json的devDependencies
+```
+##配置热更新
+```javascript
+    "scripts": {
+        "start": "webpack-dev-server --hot --line --port 8800"
+    }
+```

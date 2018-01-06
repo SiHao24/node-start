@@ -4,7 +4,7 @@
   "description": "学习 舒适的前端开发环境是怎样一种体验？",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --port 8880",
+    "start": "webpack-dev-server --hot --inline --port 8800",
     "stops": "taskkill node.exe",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +23,9 @@
   },
   "homepage": "https://github.com/SiHao24/node-start#readme",
   "devDependencies": {
+    "css-loader": "^0.28.8",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1"
   }
 }
